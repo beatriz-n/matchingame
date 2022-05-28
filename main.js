@@ -1,4 +1,5 @@
-import './style.css'
+import cardGame from "./src/components/cardGame";
 
 const $root = document.querySelector('#root');
-$root.textContent="beatriz";
+const $HTMLCardGame = cardGame();
+$root.insertAdjacentHTML("beforeend",$HTMLCardGame);
